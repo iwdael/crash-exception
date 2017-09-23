@@ -26,18 +26,18 @@ import android.widget.Toast;
  */
 
 public class CrashException implements UncaughtExceptionHandler {
-
-    public static final String TAG = "CrashException";
+    private static volatile CrashException instance = null;
+    private static final String TAG = "CrashException";
 
     //异常保存的文件夹
-    private String mCrashExceptionDir  ;
+    private String mCrashExceptionDir;
     private String mPromptContent = "很抱歉,程序出现异常,即将退出.";
 
 
     //系统默认的UncaughtException处理类
     private UncaughtExceptionHandler mDefaultHandler;
     //CrashHandler实例
-    private volatile static CrashException instance;
+
     //程序的Context对象
     private Context mContext;
     //用来存储设备信息和异常信息
@@ -50,7 +50,7 @@ public class CrashException implements UncaughtExceptionHandler {
      * 保证只有一个CrashHandler实例
      */
     private CrashException(Context context, String dir) {
-        mCrashExceptionDir=dir;
+        mCrashExceptionDir = dir;
         init(context);
     }
 
@@ -61,7 +61,7 @@ public class CrashException implements UncaughtExceptionHandler {
         if (instance == null) {
             synchronized (CrashException.class) {
                 if (instance == null)
-                    throw new RuntimeException("You must first implement two parameter constructor !");
+                    throw new RuntimeException("You must first implement two parameter constructor before you use CrashException !");
             }
         }
         return instance;
