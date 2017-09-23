@@ -1,4 +1,4 @@
-# crash-exception  [![](https://jitpack.io/v/mr-absurd/onlite.svg)](https://jitpack.io/#mr-absurd/onlite)
+# crash-exception  [![](https://jitpack.io/v/mr-absurd/crash-exception.svg)](https://jitpack.io/#mr-absurd/crash-exception)
 Crash-Exception is used to crash exception when error occurred,and error informetion will be saved in where you set.
 # How to
 To get a Git project into your build:
