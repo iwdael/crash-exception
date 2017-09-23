@@ -30,14 +30,14 @@ public class CrashException implements UncaughtExceptionHandler {
     public static final String TAG = "CrashException";
 
     //异常保存的文件夹
-    private String mCrashExceptionDir = "/sdcard/crash/";
+    private String mCrashExceptionDir  ;
     private String mPromptContent = "很抱歉,程序出现异常,即将退出.";
 
 
     //系统默认的UncaughtException处理类
     private UncaughtExceptionHandler mDefaultHandler;
     //CrashHandler实例
-    private volatile static CrashException INSTANCE = new CrashException();
+    private volatile static CrashException instance;
     //程序的Context对象
     private Context mContext;
     //用来存储设备信息和异常信息
@@ -49,14 +49,32 @@ public class CrashException implements UncaughtExceptionHandler {
     /**
      * 保证只有一个CrashHandler实例
      */
-    private CrashException() {
+    private CrashException(Context context, String dir) {
+        mCrashExceptionDir=dir;
+        init(context);
     }
 
     /**
      * 获取CrashHandler实例 ,单例模式
      */
     public static CrashException getInstance() {
-        return INSTANCE;
+        if (instance == null) {
+            synchronized (CrashException.class) {
+                if (instance == null)
+                    throw new RuntimeException("You must first implement two parameter constructor !");
+            }
+        }
+        return instance;
+    }
+
+    public static CrashException getInstance(Context context, String dir) {
+        if (instance == null) {
+            synchronized (CrashException.class) {
+                if (instance == null)
+                    instance = new CrashException(context, dir);
+            }
+        }
+        return instance;
     }
 
 
@@ -65,13 +83,13 @@ public class CrashException implements UncaughtExceptionHandler {
      *
      * @param context
      */
-    public CrashException init(Context context) {
+    private CrashException init(Context context) {
         mContext = context;
         //获取系统默认的UncaughtException处理器
         mDefaultHandler = Thread.getDefaultUncaughtExceptionHandler();
         //设置该CrashHandler为程序的默认处理器
         Thread.setDefaultUncaughtExceptionHandler(this);
-        return INSTANCE;
+        return instance;
     }
 
     /**
@@ -189,9 +207,6 @@ public class CrashException implements UncaughtExceptionHandler {
         return mCrashExceptionDir;
     }
 
-    public void setCrashExceptionDir(String mCrashExceptionDir) {
-        this.mCrashExceptionDir = mCrashExceptionDir;
-    }
 
     public void setPromptContent(String mPromptContent) {
         this.mPromptContent = mPromptContent;
@@ -213,9 +228,9 @@ public class CrashException implements UncaughtExceptionHandler {
             int sdex = name.lastIndexOf('-');
             int edex = name.lastIndexOf('.');
             long stamp = Long.parseLong(name.substring(sdex + 1, edex));
-            if (stamp>recent){
-                recent=stamp;
-                result=crash;
+            if (stamp > recent) {
+                recent = stamp;
+                result = crash;
             }
         }
         return result;

@@ -15,6 +15,6 @@ public class MyApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        CrashException.getInstance().init(getApplicationContext()).setCrashExceptionDir("/sdcard/Music/");
+        CrashException.getInstance(getApplicationContext(), "/sdcard/Music/");
     }
 }
