@@ -25,7 +25,7 @@ Add it in your root build.gradle at the end of repositories:
    public void onCreate()
         super.onCreate();
         ...
-        CrashException.getInstance().init(getApplicationContext());
+        CrashException.getInstance(Context context,String filepath) ;
         ...
    }
 ```
