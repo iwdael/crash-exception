@@ -10,6 +10,7 @@ import java.lang.reflect.Field;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 import android.content.Context;
@@ -41,7 +42,7 @@ public class CrashException implements UncaughtExceptionHandler {
     //程序的Context对象
     private Context mContext;
     //用来存储设备信息和异常信息
-    private Map<String, String> infos = new HashMap<String, String>();
+    private Map<String, String> infos = new LinkedHashMap<>();
 
     //用于格式化日期,作为日志文件名的一部分
     private DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
@@ -145,8 +146,13 @@ public class CrashException implements UncaughtExceptionHandler {
      * @param ctx
      */
     private void collectDeviceInfo(Context ctx) {
-        infos.put("versionName", SystemUtils.getApplicationVersionName(ctx));
+
         infos.put("versionCode", SystemUtils.getApplicationVersionCode(ctx));
+        infos.put("systemModel", SystemUtils.getSystemModel());
+        infos.put("deviceBrand", SystemUtils.getDeviceBrand());
+        infos.put("systemLevel", SystemUtils.getSystemLevel() + "");
+        infos.put("systemVersion", SystemUtils.getSystemVersion());
+
         Field[] fields = Build.class.getDeclaredFields();
         for (Field field : fields) {
             try {
@@ -166,13 +172,7 @@ public class CrashException implements UncaughtExceptionHandler {
      * @return 返回文件名称, 便于将文件传送到服务器
      */
     private String saveCrashInfo2File(Context context, Throwable ex) {
-
         StringBuffer sb = new StringBuffer();
-        for (Map.Entry<String, String> entry : infos.entrySet()) {
-            String key = entry.getKey();
-            String value = entry.getValue();
-            sb.append(key + "=" + value + "\n");
-        }
         Writer writer = new StringWriter();
         PrintWriter printWriter = new PrintWriter(writer);
         ex.printStackTrace(printWriter);
@@ -184,6 +184,11 @@ public class CrashException implements UncaughtExceptionHandler {
         printWriter.close();
         String result = writer.toString();
         sb.append(result);
+        for (Map.Entry<String, String> entry : infos.entrySet()) {
+            String key = entry.getKey();
+            String value = entry.getValue();
+            sb.append(key + "=" + value + "\n");
+        }
         try {
             long timestamp = System.currentTimeMillis();
             String fileName = "crash-" + SystemUtils.getSystemModel() + "-" + SystemUtils.getSystemVersion() + "-" + timestamp + ".log";
