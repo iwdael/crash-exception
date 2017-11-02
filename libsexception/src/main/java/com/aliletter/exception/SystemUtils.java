@@ -1,4 +1,4 @@
-package com.absurd.exception;
+package com.aliletter.exception;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,8 +10,8 @@ import android.telephony.TelephonyManager;
 import java.util.Locale;
 
 /**
- * Author: mr-absurd
- * Github: http://github.com/mr-absurd
+ * Author: aliletter
+ * Github: http://github.com/aliletter
  * Data: 2017/8/15.
  */
 
@@ -19,7 +19,7 @@ public class SystemUtils {
 
 
     /**
-     * @Author:mr-absurd
+     * @Author:aliletter
      * @Depict: get System Current Language
      */
     public static String getSystemLanguage() {
@@ -27,7 +27,7 @@ public class SystemUtils {
     }
 
     /**
-     * @Author:mr-absurd
+     * @Author:aliletter
      * @Depict: get System Language List
      */
     public static Locale[] getSystemLanguageList() {
@@ -35,14 +35,14 @@ public class SystemUtils {
     }
 
     /**
-     * @Author:mr-absurd
+     * @Author:aliletter
      * @Depict: get System Version
      */
     public static String getSystemVersion() {
         return Build.VERSION.RELEASE;
     }
     /**
-    * @Author:mr-absurd
+    * @Author:aliletter
     * @Depict: get system api level
     */
     public static int getSystemLevel(){
@@ -50,7 +50,7 @@ public class SystemUtils {
     }
 
     /**
-     * @Author:mr-absurd
+     * @Author:aliletter
      * @Depict: get System Model
      */
     public static String getSystemModel() {
@@ -59,7 +59,7 @@ public class SystemUtils {
 
 
     /**
-     * @Author:mr-absurd
+     * @Author:aliletter
      * @Depict: get Device Brand
      */
     public static String getDeviceBrand() {
@@ -68,7 +68,7 @@ public class SystemUtils {
 
 
     /**
-     * @Author:mr-absurd
+     * @Author:aliletter
      * @Depict: get imei of device,and need android.permission.READ_PHONE_STATE
      */
     public static String getIMEI(Context ctx) {
@@ -81,7 +81,7 @@ public class SystemUtils {
 
 
     /**
-     * @Author:mr-absurd
+     * @Author:aliletter
      * @Depict: get VersionCode of Application
      */
     public static String getApplicationVersionCode(Context context) {
@@ -96,7 +96,7 @@ public class SystemUtils {
     }
 
     /**
-     * @Author:mr-absurd
+     * @Author:aliletter
      * @Depict: get VersionName of Application
      */
     public static String getApplicationVersionName(Context context) {

@@ -1,8 +1,8 @@
-package com.absurd.crash_exception;
+package com.aliletter.crash_exception;
 
 import android.app.Application;
 
-import com.absurd.exception.CrashException;
+import com.aliletter.exception.CrashException;
 
 
 /**

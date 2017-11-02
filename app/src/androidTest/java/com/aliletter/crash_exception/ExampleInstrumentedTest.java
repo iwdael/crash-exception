@@ -1,4 +1,4 @@
-package com.absurd.crash_exception;
+package com.aliletter.crash_exception;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

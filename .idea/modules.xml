@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/crash-exception.iml" filepath="$PROJECT_DIR$/crash-exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crash-exception.iml" filepath="$PROJECT_DIR$/crash-exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libsexception/libsexception.iml" filepath="$PROJECT_DIR$/libsexception/libsexception.iml" />
       <module fileurl="file://$PROJECT_DIR$/libsexception/libsexception.iml" filepath="$PROJECT_DIR$/libsexception/libsexception.iml" />
     </modules>
   </component>

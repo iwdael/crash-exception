@@ -1,4 +1,4 @@
-package com.absurd.crash_exception;
+package com.aliletter.crash_exception;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Toast;
 
 
-import com.absurd.exception.CrashException;
+import com.aliletter.exception.CrashException;
 
 import java.io.File;
 

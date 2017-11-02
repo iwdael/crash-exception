@@ -1,4 +1,4 @@
-package com.absurd.exception;
+package com.aliletter.exception;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

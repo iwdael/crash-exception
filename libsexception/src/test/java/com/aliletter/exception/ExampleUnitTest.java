@@ -1,4 +1,4 @@
-package com.absurd.exception;
+package com.aliletter.exception;
 
 import org.junit.Test;
 

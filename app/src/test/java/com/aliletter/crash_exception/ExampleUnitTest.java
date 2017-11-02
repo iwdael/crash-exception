@@ -1,4 +1,4 @@
-package com.absurd.crash_exception;
+package com.aliletter.crash_exception;
 
 import org.junit.Test;
 
