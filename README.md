@@ -1,4 +1,4 @@
-# crash-exception  [![](https://jitpack.io/v/mr-absurd/crash-exception.svg)](https://jitpack.io/#mr-absurd/crash-exception)
+# crash-exception  [![](https://jitpack.io/v/aliletter/crash-exception.svg)](https://jitpack.io/#aliletter/crash-exception)
 Crash-Exception is used to crash exception when error occurred,and error informetion will be saved in where you set.
 # How to
 To get a Git project into your build:
@@ -15,7 +15,7 @@ Add it in your root build.gradle at the end of repositories:
 ## Step 2. Add the dependency
 
 	dependencies {
-          compile 'com.github.mr-absurd:crash-exception:v1.0.1'
+          compile 'com.github.aliletter:crash-exception:v1.0.5'
           
 	}
 
