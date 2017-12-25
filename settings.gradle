@@ -1,1 +1,1 @@
-include ':app', ':libsexception'
+include ':example', ':libsexception'

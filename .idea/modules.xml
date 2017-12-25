@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\alile\Desktop\crash-exception\app\app.iml" filepath="C:\Users\alile\Desktop\crash-exception\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/crash-exception.iml" filepath="$PROJECT_DIR$/crash-exception.iml" />
-      <module fileurl="file://$PROJECT_DIR$/crash-exception.iml" filepath="$PROJECT_DIR$/crash-exception.iml" />
+      <module fileurl="file://C:\Users\alile\Desktop\crash-exception\crash-exception.iml" filepath="C:\Users\alile\Desktop\crash-exception\crash-exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/example.iml" filepath="$PROJECT_DIR$/example/example.iml" />
       <module fileurl="file://$PROJECT_DIR$/libsexception/libsexception.iml" filepath="$PROJECT_DIR$/libsexception/libsexception.iml" />
-      <module fileurl="file://$PROJECT_DIR$/libsexception/libsexception.iml" filepath="$PROJECT_DIR$/libsexception/libsexception.iml" />
+      <module fileurl="file://C:\Users\alile\Desktop\crash-exception\libsexception\libsexception.iml" filepath="C:\Users\alile\Desktop\crash-exception\libsexception\libsexception.iml" />
     </modules>
   </component>
 </project>
