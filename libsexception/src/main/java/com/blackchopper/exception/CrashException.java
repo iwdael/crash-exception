@@ -1,4 +1,4 @@
-package com.aliletter.exception;
+package com.blackchopper.exception;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -20,11 +20,11 @@ import android.util.Log;
 import android.widget.Toast;
 
 /**
- * Author: aliletter
- * Github: http://github.com/aliletter
- * Data: 2017/8/15.
+ * author  : Black Chopper
+ * e-mail  : 4884280@qq.com
+ * github  : http://github.com/BlackChopper
+ * project : CrashException
  */
-
 public class CrashException implements UncaughtExceptionHandler {
     private static volatile CrashException instance = null;
     private static final String TAG = "CrashException";

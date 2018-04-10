@@ -1,5 +1,5 @@
-# crash-exception  [![](https://jitpack.io/v/aliletter/crash-exception.svg)](https://jitpack.io/#aliletter/crash-exception)
-Crash-Exception is used to crash exception when error occurred,and error informetion will be saved in where you set.[中文文档](https://github.com/aliletter/crash-exception/blob/master/README_CHINESE.md)
+# crash-exception  [![](https://jitpack.io/v/blackchopper/crash-exception.svg)](https://jitpack.io/#blackchopper/crash-exception)
+Crash-Exception is used to crash exception when error occurred,and error informetion will be saved in where you set.[中文文档](https://github.com/blackchopper/crash-exception/blob/master/README_CHINESE.md)
 ## Intruction
 Abnormal information captured, including models, brands, screen resolution and other equipment information.
 ### Code Sample
@@ -33,7 +33,7 @@ CrashException.getInstance().clearExceptionFile()
 ## How to
 To get a Git project into your build:
 ### Step 1. Add the JitPack repository to your build file
-Add it in your root build.gradle at the end of repositories.   [click here for details](https://github.com/aliletter/CarouselBanner/blob/master/root_build.gradle.png)
+Add it in your root build.gradle at the end of repositories.   [click here for details](https://github.com/blackchopper/CarouselBanner/blob/master/root_build.gradle.png)
 ```Java
 	allprojects {
 		repositories {
@@ -43,16 +43,16 @@ Add it in your root build.gradle at the end of repositories.   [click here for d
 	}
 ```
 ### Step 2. Add the dependency
-Add it in your application module build.gradle at the end of dependencies where you want to use.[click here for details](https://github.com/aliletter/CarouselBanner/blob/master/application_build.gradle.png)
+Add it in your application module build.gradle at the end of dependencies where you want to use.[click here for details](https://github.com/blackchopper/CarouselBanner/blob/master/application_build.gradle.png)
 ```Java
 	dependencies {
                 ...
-	        compile 'com.github.aliletter:crash-exception:v1.0.6'
+	        compile 'com.github.blackchopper:crash-exception:v1.0.7'
 	}
 ```
  
 ### Step 3. Add the permission
-Add it in your application AndroidManifest.xml in the manifest label.   [click here for details](https://github.com/aliletter/OnHttp/blob/master/androimanifest.png)
+Add it in your application AndroidManifest.xml in the manifest label.   [click here for details](https://github.com/blackchopper/OnHttp/blob/master/androimanifest.png)
 ```Java
         <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -61,4 +61,4 @@ Add it in your application AndroidManifest.xml in the manifest label.   [click h
 ## Thank you for your browsing
 If you have any questions, please join the QQ group. I will do my best to answer it for you. Welcome to star and fork this repository, alse follow me.
 <br>
-![Image Text](https://github.com/aliletter/CarouselBanner/blob/master/qq_group.png)
+![Image Text](https://github.com/blackchopper/CarouselBanner/blob/master/qq_group.png)

@@ -1,16 +1,16 @@
-package com.aliletter.crash_exception;
+package com.blackchopper.crash_exception;
 
 import android.app.Application;
 
-import com.aliletter.exception.CrashException;
+import com.blackchopper.exception.CrashException;
 
 
 /**
- * Author: mr-absurd
- * Github: http://github.com/mr-absurd
- * Data: 2017/8/15.
+ * author  : Black Chopper
+ * e-mail  : 4884280@qq.com
+ * github  : http://github.com/BlackChopper
+ * project :
  */
-
 public class MyApp extends Application {
     @Override
     public void onCreate() {

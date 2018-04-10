@@ -1,4 +1,4 @@
-package com.aliletter.crash_exception;
+package com.blackchopper.exception;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.absurd.crash_exception", appContext.getPackageName());
+        assertEquals("com.absurd.exception.test", appContext.getPackageName());
     }
 }

@@ -1,4 +1,4 @@
-package com.aliletter.crash_exception;
+package com.blackchopper.exception;
 
 import org.junit.Test;
 
