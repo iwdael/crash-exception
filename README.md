@@ -1,5 +1,5 @@
 # crash-exception  [![](https://jitpack.io/v/hacknife/crash-exception.svg)](https://jitpack.io/#hacknife/crash-exception)
-当程序发生错误时，Crash-Exception可以抓捕到异常信息，并将错误信息保存到你指定的目录中。[中文文档](https://github.com/hacknife/crash-exception/blob/master/README_ENGLISH.md)
+当程序发生错误时，Crash-Exception可以抓捕到异常信息，并将错误信息保存到你指定的目录中。[English](https://github.com/hacknife/crash-exception/blob/master/README_ENGLISH.md)
 ## Intruction
 抓捕的异常信息中，包含机型，品牌，屏幕分辨率等设备信息。
 ### 代码示例
