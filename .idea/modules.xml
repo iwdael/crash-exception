@@ -4,13 +4,16 @@
     <modules>
       <module fileurl="file://C:\Users\alile\Desktop\crash-exception\app\app.iml" filepath="C:\Users\alile\Desktop\crash-exception\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/crash-exception.iml" filepath="$PROJECT_DIR$/crash-exception.iml" />
-      <module fileurl="file://F:\crash-exception\crash-exception.iml" filepath="F:\crash-exception\crash-exception.iml" />
+      <module fileurl="file://C:\Users\Black Chopper\Desktop\crash-exception\crash-exception.iml" filepath="C:\Users\Black Chopper\Desktop\crash-exception\crash-exception.iml" />
       <module fileurl="file://C:\Users\alile\Desktop\crash-exception\crash-exception.iml" filepath="C:\Users\alile\Desktop\crash-exception\crash-exception.iml" />
+      <module fileurl="file://F:\crash-exception\crash-exception.iml" filepath="F:\crash-exception\crash-exception.iml" />
       <module fileurl="file://$PROJECT_DIR$/example/example.iml" filepath="$PROJECT_DIR$/example/example.iml" />
       <module fileurl="file://F:\crash-exception\example\example.iml" filepath="F:\crash-exception\example\example.iml" />
+      <module fileurl="file://C:\Users\Black Chopper\Desktop\crash-exception\example\example.iml" filepath="C:\Users\Black Chopper\Desktop\crash-exception\example\example.iml" />
       <module fileurl="file://$PROJECT_DIR$/libsexception/libsexception.iml" filepath="$PROJECT_DIR$/libsexception/libsexception.iml" />
-      <module fileurl="file://F:\crash-exception\libsexception\libsexception.iml" filepath="F:\crash-exception\libsexception\libsexception.iml" />
       <module fileurl="file://C:\Users\alile\Desktop\crash-exception\libsexception\libsexception.iml" filepath="C:\Users\alile\Desktop\crash-exception\libsexception\libsexception.iml" />
+      <module fileurl="file://F:\crash-exception\libsexception\libsexception.iml" filepath="F:\crash-exception\libsexception\libsexception.iml" />
+      <module fileurl="file://C:\Users\Black Chopper\Desktop\crash-exception\libsexception\libsexception.iml" filepath="C:\Users\Black Chopper\Desktop\crash-exception\libsexception\libsexception.iml" />
     </modules>
   </component>
 </project>

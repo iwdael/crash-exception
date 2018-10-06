@@ -1,8 +1,8 @@
-package com.blackchopper.crash_exception;
+package com.hacknife.crash_exception;
 
 import android.app.Application;
 
-import com.blackchopper.exception.CrashException;
+import com.hacknife.exception.CrashException;
 
 
 /**

@@ -1,4 +1,4 @@
-package com.blackchopper.exception;
+package com.hacknife.exception;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -20,9 +20,9 @@ import android.util.Log;
 import android.widget.Toast;
 
 /**
- * author  : Black Chopper
+ * author  : Hacknife
  * e-mail  : 4884280@qq.com
- * github  : http://github.com/BlackChopper
+ * github  : http://github.com/hacknife
  * project : CrashException
  */
 public class CrashException implements UncaughtExceptionHandler {

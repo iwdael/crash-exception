@@ -1,4 +1,4 @@
-package com.blackchopper.exception;
+package com.hacknife.exception;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,9 +10,9 @@ import android.telephony.TelephonyManager;
 import java.util.Locale;
 
 /**
- * author  : Black Chopper
+ * author  : Hacknife
  * e-mail  : 4884280@qq.com
- * github  : http://github.com/BlackChopper
+ * github  : http://github.com/hacknife
  * project : CrashException
  */
 public class SystemUtils {

@@ -1,4 +1,4 @@
-package com.blackchopper.crash_exception;
+package com.hacknife.crash_exception;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Toast;
 
 
-import com.blackchopper.exception.CrashException;
+import com.hacknife.exception.CrashException;
 
 import java.io.File;
 
