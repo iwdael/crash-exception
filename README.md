@@ -1,5 +1,5 @@
 # crash-exception
-[![](https://img.shields.io/badge/platform-android-orange.svg)](https://github.com/hacknife) [![](https://img.shields.io/badge/language-java-yellow.svg)](https://github.com/hacknife) [![](https://img.shields.io/badge/JCenter-1.0.8-brightgreen.svg)](http://jcenter.bintray.com/com/hacknife/crash-exception/) [![](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/hacknife) [![](https://img.shields.io/badge/license-apache--2.0-green.svg)](https://github.com/hacknife) [![](https://img.shields.io/badge/api-14+-green.svg)](https://github.com/hacknife)<br/><br/>
+[![](https://img.shields.io/badge/platform-android-orange.svg)](https://github.com/hacknife) [![](https://img.shields.io/badge/language-java-yellow.svg)](https://github.com/hacknife) [![](https://img.shields.io/badge/JCenter-1.0.8-brightgreen.svg)](http://jcenter.bintray.com/com/hacknife/crash-exception/) [![](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/hacknife) [![](https://img.shields.io/badge/license-apache--2.0-green.svg)](https://github.com/hacknife) [![](https://img.shields.io/badge/api-11+-green.svg)](https://github.com/hacknife)<br/><br/>
 当程序发生错误时，Crash-Exception可以抓捕到异常信息，并将错误信息保存到你指定的目录中。
 ## Intruction
 抓捕的异常信息中，包含机型，品牌，屏幕分辨率等设备信息。
